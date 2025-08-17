@@ -1,1 +1,4 @@
+1. Подключитесь к контейнеру:
+docker exec -it kafka1 bash
+2. Создать топик
 kafka-topics --create --topic my-topic --partitions 3 --replication-factor 2 --if-not-exists --bootstrap-server kafka1:9092,kafka2:9092,kafka3:9092
